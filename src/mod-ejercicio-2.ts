@@ -83,4 +83,51 @@ export class rationalNumbers{
         this.denominator = aux;
     }
 
+    /**
+     * Metodo para sumar, restar, multiplicar y dividir
+     * @param rationalNum numero racional con el que operamos
+     */
+    addNumbers(rationalNum:rationalNumbers){
+        const aux1 = this.numerator * rationalNum.denominator;
+        const aux2 = this.denominator * rationalNum.numerator;
+        this.numerator = aux1 + aux2;
+        this.denominator = this.denominator * rationalNum.denominator;
+    }
+
+    /**
+     * Metodo para restar dos numeros racionales
+     * @param rationalNum numero racional con el que operamos
+     */
+    substractNumbers(rationalNum:rationalNumbers){
+        const aux1 = this.numerator * rationalNum.denominator;
+        const aux2 = this.denominator * rationalNum.numerator;
+        this.numerator = aux1 - aux2;
+        this.denominator = this.denominator * rationalNum.denominator;
+    }
+
+    /**
+     * Metodo para multiplicar dos numeros racionales
+     * @param rationalNum numero racional con el que operamos
+     */
+    multiplyNumbers(rationalNum:rationalNumbers){
+        this.numerator = this.numerator * rationalNum.numerator;
+        this.denominator = this.denominator * rationalNum.denominator;
+    }
+
+    /**
+     * Metodo para dividir dos numeros racionales
+     * @param rationalNum numero racional con el que operamos
+     */
+    divideNumbers(rationalNum:rationalNumbers){
+        this.numerator = this.numerator * rationalNum.denominator;
+        this.denominator = this.denominator * rationalNum.numerator;
+    }
+
+    /**
+     * Metodo para pasar un numero racional a decimal
+     * @returns devolvemos el numero racional en decimal
+     */
+    rationalToDecimal(){
+        return this.numerator / this.denominator;
+    }
 }

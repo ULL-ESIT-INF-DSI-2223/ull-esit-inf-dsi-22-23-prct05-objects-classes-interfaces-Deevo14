@@ -31,4 +31,36 @@ describe('rationalNumbers', () => {
         num.invert();
         expect(num.toString()).to.be.equal("4/2");
     });
+    it('add ', () => {
+        const num = new rationalNumbers(2, 4);
+        const num2 = new rationalNumbers(1, 2);
+        num.addNumbers(num2);
+        expect(num.toString()).to.be.equal("8/8");
+    });
+    it('substract ', () => {
+        const num = new rationalNumbers(2,1);
+        const num2 = new rationalNumbers(1,2);
+        num.substractNumbers(num2);
+        expect(num.toString()).to.be.equal("3/2");
+    });
+    it('multiply ', () => {
+        const num = new rationalNumbers(2,1);
+        const num2 = new rationalNumbers(1,2);
+        num.multiplyNumbers(num2);
+        expect(num.toString()).to.be.equal("2/2");
+    });
+    it('divide ', () => {
+        const num = new rationalNumbers(2,1);
+        const num2 = new rationalNumbers(1,2);
+        num.divideNumbers(num2);
+        expect(num.toString()).to.be.equal("4/1");
+    });
+    it('to string ', () => {
+        const num = new rationalNumbers(2,1);
+        expect(num.toString()).to.be.equal("2/1");
+    });
+    it('rationaltodecimal ', () => {
+        const num = new rationalNumbers(1,4);
+        expect(num.rationalToDecimal()).to.be.equal(0.25);
+    });
 });
