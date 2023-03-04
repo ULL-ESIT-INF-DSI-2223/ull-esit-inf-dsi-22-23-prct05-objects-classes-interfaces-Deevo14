@@ -2,7 +2,7 @@ import 'mocha';
 import {expect} from 'chai';
 import {productTable} from "../src/mod-ejercicio-1";
 
-describe("productTable function tests", () => {
+describe("ProductTable function tests", () => {
   it("productTale(2) returns value [[1, 2], [2, 4]]", () => {
     expect(productTable(2)).to.be.eql([[1, 2], [2, 4]]);
   });

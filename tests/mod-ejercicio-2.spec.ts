@@ -2,7 +2,7 @@ import 'mocha';
 import {expect} from 'chai';
 import {rationalNumbers} from "../src/mod-ejercicio-2";
 
-describe('rationalNumbers', () => {
+describe('RationalNumbers tests', () => {
     it('Enteros ', () => {
       const num = new rationalNumbers(3, 4);
       expect(num.checkInts()).to.be.eql(true);

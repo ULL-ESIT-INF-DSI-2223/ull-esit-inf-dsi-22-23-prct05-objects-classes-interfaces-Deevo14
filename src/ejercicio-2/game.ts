@@ -61,8 +61,8 @@ export class Game {
   }
 }
 // Pruebas interactivas para la clase Game
-const p1 = new Player("Roberto");
-const p2 = new Player("David");
-const game = new Game([p1, p2]);
+// const p1 = new Player("Roberto");
+// const p2 = new Player("David");
+// const game = new Game([p1, p2]);
 
-game.start();
+// game.start();
