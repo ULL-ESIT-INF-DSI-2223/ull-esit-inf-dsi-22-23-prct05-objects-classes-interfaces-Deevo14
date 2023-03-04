@@ -1,6 +1,14 @@
 {
   "entryPoints": [
-    "./src/mod-ejercicio-1.ts"
+    "./src/mod-ejercicio-1.ts",
+    "./src/mod-ejercicio-2.ts",
+    "./src/ejercicio-1/album.ts",
+    "./src/ejercicio-1/song.ts",
+    "./src/ejercicio-1/artist.ts",
+    "./src/ejercicio-1/musicLibrary.ts",
+    "./src/ejercicio-2/game.ts",
+    "./src/ejercicio-2/map.ts",
+    "./src/ejercicio-2/player.ts"
   ],
   "out": "./docs"
 }

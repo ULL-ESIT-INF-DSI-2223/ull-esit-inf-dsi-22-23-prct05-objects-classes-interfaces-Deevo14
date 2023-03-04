@@ -11,15 +11,24 @@ describe('rationalNumbers', () => {
         const num = new rationalNumbers(2.2, 3.5);
         expect(num.checkInts()).to.be.eql(false);
     });
-    it('denomitaror 0 ', () => {
+    it('denomitaror != 0', () => {
+        const num = new rationalNumbers(2, 1);
+        expect(num.checkDenominator()).to.be.eql(true);
+
+    });
+    it('denomitaror 0 error', () => {
         const num = new rationalNumbers(2, 0);
         expect(num.checkDenominator()).to.be.eql(false);
+
     });
     it('simplify ', () => {
         const num = new rationalNumbers(2, 4);
         num.simplifyNumber();
         expect(num.toString()).to.be.equal("1/2");
     });
-
-
-  });
+    it('invert ', () => {
+        const num = new rationalNumbers(2, 4);
+        num.invert();
+        expect(num.toString()).to.be.equal("4/2");
+    });
+});

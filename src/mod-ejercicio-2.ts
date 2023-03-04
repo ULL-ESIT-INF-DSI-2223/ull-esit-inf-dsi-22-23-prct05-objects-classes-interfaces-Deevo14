@@ -56,7 +56,7 @@ export class rationalNumbers{
         let b = this.denominator;
 
         while (b !== 0) {
-            let r = a % b;
+            const r = a % b;
             a = b;
             b = r;
         }
@@ -82,9 +82,5 @@ export class rationalNumbers{
         this.numerator = this.denominator;
         this.denominator = aux;
     }
-
-
-
-
 
 }

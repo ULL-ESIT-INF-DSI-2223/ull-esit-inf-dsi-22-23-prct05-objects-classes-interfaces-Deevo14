@@ -1,10 +1,10 @@
 {
-  "name": "doc-test",
+  "name": "practica5",
   "version": "1.0.0",
   "description": "",
-  "main": "basicFunctions.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"node dist/mod-ejercicio-1.js\"",
+    "dev": "tsc-watch --onSuccess \"node dist/ejercicio-2/game.js\"",
     "doc": "typedoc",
     "test": "mocha",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output"
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/chai": "^4.3.4",
     "@types/mocha": "^10.0.1",
+    "@types/prompt-sync": "^4.2.0",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
     "chai": "^4.3.7",
@@ -22,11 +23,17 @@
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "mocha": "^10.2.0",
+    "mock-stdin": "^1.0.0",
     "nyc": "^15.1.0",
     "prettier": "^2.8.3",
     "ts-node": "^10.9.1",
     "tsc-watch": "^6.0.0",
     "typedoc": "^0.23.24",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "scanf": "^1.1.2",
+    "sinon": "^15.0.1"
   }
 }
